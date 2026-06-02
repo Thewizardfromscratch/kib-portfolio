@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kib Bryan — Galerie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-back">Portfolio</a>
+    <a href="index.html" class="nav-logo">Kib Bryan</a>
+  </nav>
+
+  <!-- GALLERY HEADER -->
+  <div class="gallery-header">
+    <div class="gallery-tags" id="galleryTags"></div>
+    <h1 class="gallery-title" id="galleryTitle">Galerie</h1>
+    <p class="gallery-count" id="galleryCount"></p>
+  </div>
+
+  <!-- PHOTO GRID -->
+  <div class="photo-grid" id="photoGrid"></div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-btn lb-close" onclick="closeLb()">Fermer ✕</button>
+    <button class="lb-btn lb-prev"  onclick="navLb(-1)">←</button>
+    <img class="lightbox-img" id="lbImg" src="" alt="" onclick="event.stopPropagation()">
+    <button class="lb-btn lb-next"  onclick="navLb(1)">→</button>
+    <span class="lb-counter" id="lbCounter"></span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <p class="footer-name">Kib Bryan</p>
+      <p class="footer-email">mouangassabryan@gmail.com</p>
+    </div>
+    <a href="index.html" class="footer-back">← Retour au portfolio</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="lang.js"></script>
+  <script src="gallery.js"></script>
+
+</body>
+</html>

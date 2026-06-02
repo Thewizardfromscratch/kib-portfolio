@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kib Bryan — Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="index-nav">
+    <a href="#" class="nav-logo">Photod'hier </a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langToggle" data-active="fr" onclick="toggleLang()">
+        <span class="lt-option lt-fr">FR</span>
+        <span class="lt-knob"></span>
+        <span class="lt-option lt-en">EN</span>
+      </button>
+      <a href="mailto:mouangassabryan@gmail.com" class="nav-contact">Contact</a>
+    </div>  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero-label">Photography - Edmonton, Alberta</p>
+    <h1 class="hero-name">Kib<br><em>Photod'hier</em></h1>
+    <div class="hero-bottom">
+      <p class="hero-tagline">Photographe basé à Edmonton. Événements, portraits professionnels, lifestyle &amp; BTS.</p>
+      <a href="#portfolio" class="hero-scroll">Voir le portfolio</a>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+
+    <div class="portfolio-header">
+      <h2 class="portfolio-title">Portfolio</h2>
+      <span class="portfolio-count">04 catégories</span>
+    </div>
+
+    <!-- 001 — EVENTS -->
+    <article class="case-card" data-cat="events">
+      <div class="case-meta">
+        <div>
+          <p class="case-num">001</p>
+          <div class="case-tags">
+            <span class="tag accent">Events</span>
+            <span class="tag">Sports</span>
+            <span class="tag">Outdoor</span>
+          </div>
+          <h3 class="case-name">Tournois &amp; Événements sportifs</h3>
+          <p class="case-desc">Couverture photo complète de tournois de basketball et événements sportifs à Edmonton. Du court à l'ambiance, chaque moment capturé avec intensité.</p>
+        </div>
+        <div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-events-count">—</span>
+              <span class="case-stat-label">Événements couverts</span>
+            </div>
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-events-photos">—</span>
+              <span class="case-stat-label">Photos livrées</span>
+            </div>
+          </div>
+          <a href="gallery.html?cat=events" class="case-cta">Voir toutes les photos →</a>
+        </div>
+      </div>
+      <div class="case-img">
+        <div class="case-img-inner" id="cover-events">
+          <span class="case-img-placeholder">Photo de couverture<br>[ config.js → events → coverPhoto ]</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 002 — PORTRAIT -->
+    <article class="case-card" data-cat="portrait">
+      <div class="case-meta">
+        <div>
+          <p class="case-num">002</p>
+          <div class="case-tags">
+            <span class="tag accent">Portrait</span>
+            <span class="tag">Studio</span>
+            <span class="tag">Professional</span>
+          </div>
+          <h3 class="case-name">Portraits professionnels</h3>
+          <p class="case-desc">Sessions portrait pour communications, personal branding et médias sociaux. Fond blanc studio ou environnement naturel selon le besoin du client.</p>
+        </div>
+        <div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-portrait-count">—</span>
+              <span class="case-stat-label">Sessions réalisées</span>
+            </div>
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-portrait-photos">—</span>
+              <span class="case-stat-label">Photos livrées</span>
+            </div>
+          </div>
+          <a href="gallery.html?cat=portrait" class="case-cta">Voir toutes les photos →</a>
+        </div>
+      </div>
+      <div class="case-img">
+        <div class="case-img-inner" id="cover-portrait">
+          <span class="case-img-placeholder">Photo de couverture<br>[ config.js → portrait → coverPhoto ]</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 003 — BTS -->  
+    <article class="case-card" data-cat="bts">
+      <div class="case-meta">
+        <div>
+          <p class="case-num">003</p>
+          <div class="case-tags">
+            <span class="tag accent">BTS</span>
+            <span class="tag">Documentary</span>
+            <span class="tag">Lifestyle</span>
+          </div>
+          <h3 class="case-name">Behind The Scenes</h3>
+          <p class="case-desc">Documentation des coulisses d'événements et de productions. Un regard authentique sur ce qui se passe derrière la caméra.</p>
+        </div>
+        <div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-bts-count">—</span>
+              <span class="case-stat-label">Productions documentées</span>
+            </div>
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-bts-photos">—</span>
+              <span class="case-stat-label">Photos livrées</span>
+            </div>
+          </div>
+          <a href="gallery.html?cat=bts" class="case-cta">Voir toutes les photos →</a>
+        </div>
+      </div>
+      <div class="case-img">
+        <div class="case-img-inner" id="cover-bts">
+          <span class="case-img-placeholder">Photo de couverture<br>[ config.js → bts → coverPhoto ]</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 004 — OUTDOOR -->
+    <article class="case-card" data-cat="outdoor">
+      <div class="case-meta">
+        <div>
+          <p class="case-num">004</p>
+          <div class="case-tags">
+            <span class="tag accent">Outdoor</span>
+            <span class="tag">Lifestyle</span>
+            <span class="tag">Editorial</span>
+          </div>
+          <h3 class="case-name">Lifestyle &amp; Éditorial</h3>
+          <p class="case-desc">Photographie lifestyle en extérieur. Portraits naturels qui capturent l'authenticité des sujets dans leur environnement.</p>
+        </div>
+        <div>
+          <div class="case-stats">
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-outdoor-count">—</span>
+              <span class="case-stat-label">Projets réalisés</span>
+            </div>
+            <div class="case-stat">
+              <span class="case-stat-num" id="stat-outdoor-photos">—</span>
+              <span class="case-stat-label">Photos livrées</span>
+            </div>
+          </div>
+          <a href="gallery.html?cat=outdoor" class="case-cta">Voir toutes les photos →</a>
+        </div>
+      </div>
+      <div class="case-img">
+        <div class="case-img-inner" id="cover-outdoor">
+          <span class="case-img-placeholder">Photo de couverture<br>[ config.js → outdoor → coverPhoto ]</span>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <p class="footer-cta-text">Travaillons ensemble.</p>
+      <a href="mailto:mouangassabryan@gmail.com" class="btn-outline">Me contacter</a>
+    </div>
+    <div class="footer-info">
+      <p class="footer-name">Kib Bryan</p>
+      <p class="footer-email">mouangassabryan@gmail.com</p>
+      <p class="footer-email" style="margin-top:4px;">Edmonton, Alberta</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script>
+    // Apply config to index page
+    Object.keys(CONFIG).forEach(cat => {
+      const data    = CONFIG[cat];
+      const cover   = document.getElementById('cover-' + cat);
+      const countEl = document.getElementById('stat-' + cat + '-count');
+      const photosEl= document.getElementById('stat-' + cat + '-photos');
+      if (cover && data.coverPhoto) {
+        cover.innerHTML = '<img src="' + data.coverPhoto + '" alt="' + data.title + '">';
+      }
+      if (countEl  && data.statCount)  countEl.textContent  = data.statCount;
+      if (photosEl && data.statPhotos) photosEl.textContent = data.statPhotos;
+    });
+  </script>
+
+  <script src="lang.js"></script>
+  <script>
+  function applyPageLang(lang) {
+    const l = LANG[lang];
+    const q = s => document.querySelector(s);
+
+    q('.nav-contact').textContent       = l.contact;
+    q('.hero-label').textContent        = l.heroLabel;
+    q('.hero-tagline').textContent      = l.heroTagline;
+    q('.hero-scroll').textContent       = l.heroScroll;
+    q('.portfolio-title').textContent   = l.portfolioTitle;
+    q('.portfolio-count').textContent   = l.portfolioCount;
+    q('.footer-cta-text').textContent   = l.footerCta;
+    q('.btn-outline').textContent       = l.footerBtn;
+
+    ['events','portrait','bts','outdoor'].forEach(cat => {
+      const card = document.querySelector('[data-cat="' + cat + '"]');
+      if (!card) return;
+      const c = l.categories[cat];
+      card.querySelector('.case-name').textContent = c.name;
+      card.querySelector('.case-desc').textContent = c.desc;
+      card.querySelector('.case-cta').textContent  = c.cta;
+      const labels = card.querySelectorAll('.case-stat-label');
+      if (labels[0]) labels[0].textContent = c.stat1;
+      if (labels[1]) labels[1].textContent = c.stat2;
+    });
+  }
+  initLang();
+  </script>
+  
+</body>
+</html>
