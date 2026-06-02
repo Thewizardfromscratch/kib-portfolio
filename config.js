@@ -32,7 +32,7 @@ const CONFIG = {
     title:       "Portraits professionnels",
     description: "Sessions portrait pour communications, personal branding et médias sociaux. Fond blanc studio ou environnement naturel selon le besoin du client.",
     tags:        ["Portrait", "Studio", "Professional"],
-    coverPhoto:  "",
+    coverPhoto:  "images/portrait/Shoot_jdsp_FO1.jpg",
     statCount:   "",
     statLabel1:  "Sessions réalisées",
     statPhotos:  "",
