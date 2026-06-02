@@ -1,6 +1,21 @@
 {
     "events":   [],
-    "portrait": ["images/portrait/Shoot_jdsp_FO1.jpg","images/portrait/Shoot_jdsp_FO2.jpg","images/portrait/Shoot_jdsp_CI1.jpg"],
+    "portrait": [
+        "images/portrait/Shoot_jdsp_FO1.jpg",
+        "images/portrait/Shoot_jdsp_FO2.jpg",
+        "images/portrait/Shoot_jdsp_FO3.jpg",
+        "images/portrait/Shoot_jdsp_NE1.jpg",
+        "images/portrait/Shoot_jdsp_NE2.jpg",
+        "images/portrait/Shoot_jdsp_NE3.jpg",
+        "images/portrait/Shoot_jdsp_NE4.jpg",
+        "images/portrait/Shoot_jdsp_CI1.jpg",
+        "images/portrait/Shoot_jdsp_HA1.jpg",
+        "images/portrait/Shoot_jdsp_HA2.jpg",
+        "images/portrait/Shoot_jdsp_HE1.jpg",
+        "images/portrait/Shoot_jdsp_HE2.jpg",
+        "images/portrait/Shoot_jdsp_EN1.jpg",
+        "images/portrait/Shoot_jdsp_EN2.jpg",
+        "images/portrait/Shoot_jdsp_CH1.jpg"],
     "bts":      [],
     "outdoor":  []
   }
