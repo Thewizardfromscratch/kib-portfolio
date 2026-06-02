@@ -399,7 +399,7 @@ footer {
 /* ── RESPONSIVE ───────────────────────────────── */
 @media (max-width: 768px) {
   nav                { padding: 1.25rem 1.5rem; }
-  .hero              { padding: 0 1.5rem 3rem; min-height: 55vh; }
+  .hero              { padding: 0 1.5rem 3rem; min-height: 75vh; }
   .portfolio         { padding: 0 1.5rem 4rem; }
   .gallery-header    { padding: 2rem 1.5rem; }
   .photo-grid        { padding: 1.5rem; columns: 2; }
