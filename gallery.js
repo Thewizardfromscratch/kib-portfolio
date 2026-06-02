@@ -10,6 +10,7 @@
   const cat     = params.get('cat') || 'events';
   const manifest = await fetch('manifest.json').then(r => r.json()).catch(() => ({}));
   const photos = (manifest[cat] || []);
+  const countEl = document.getElementById('galleryCount');
   
   function applyPageLang(lang) {
     const l  = LANG[lang];
@@ -51,17 +52,7 @@
     countEl.textContent = '0 photo';
     grid.innerHTML =
       '<div class="empty-state">' +
-        '<p class="empty-title">Photos à venir.</p>' +
-        '<p style="font-size:13px;line-height:1.8;">' +
-          'Ouvre <strong>config.js</strong> dans Cursor et ajoute tes liens<br>' +
-          'dans la section <strong>' + cat + ' → photos</strong>.' +
-        '</p>' +
-        '<div class="empty-code">' +
-          'photos: [<br>' +
-          '&nbsp;&nbsp;"https://i.imgur.com/XXXXX.jpg",<br>' +
-          '&nbsp;&nbsp;"https://i.imgur.com/YYYYY.jpg",<br>' +
-          ']' +
-        '</div>' +
+        '<p class="empty-title">Photos à venir.</p>'
       '</div>';
     return;
   }
