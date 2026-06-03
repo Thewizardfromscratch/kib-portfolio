@@ -1,10 +1,10 @@
 /* ================================================
-   Kib Bryan — Portfolio
-   gallery.js — Logique de la page galerie
-   Ne pas modifier.
-   ================================================ */
+  Kib Bryan — Portfolio
+  gallery.js — Logique de la page galerie
+  Ne pas modifier.
+  ================================================ */
 
-(async function () {
+  (async function () {
 
   const params  = new URLSearchParams(window.location.search);
   const cat     = params.get('cat') || 'events';
@@ -49,10 +49,11 @@
   const grid = document.getElementById('photoGrid');
 
   if (photos.length === 0) {
-    countEl.textContent = '0 photo';
+    const l = LANG[currentLang] || LANG.fr;
+    countEl.textContent = l.photosCount(0);
     grid.innerHTML =
       '<div class="empty-state">' +
-        '<p class="empty-title">Photos à venir.</p>'
+        '<p class="empty-title">' + l.emptyTitle + '</p>' +
       '</div>';
     return;
   }
